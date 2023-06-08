@@ -15,16 +15,18 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
   </head>
   <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section {{meta.bodyClasses}}">
     {%include "components/notegrowthhistory.njk"%}
+    
     {% if settings.dgShowFileTree !== true %}
       {%include "components/navbar.njk"%}
     {%else%}
       {%include "components/filetree.njk"%}
     {% endif %}
+
     {% if settings.dgEnableSearch === true %}
       {%include "components/searchContainer.njk"%}
     {% endif %}
-    <div class="background-texture">
-    <main class="content cm-s-obsidian  {{contentClasses}}">
+
+    <main class="content cm-s-obsidian {{contentClasses}}">
       <header>
         {% if settings.dgShowInlineTitle === true %}
           <h1 data-note-icon="{% if noteIcon %}{{noteIcon}}{% else %}{{meta.noteIconsSettings.default}}{% endif %}">{% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}</h1>
@@ -73,7 +75,6 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
         {% include imp %}
       {% endfor %}
     </main>
-    </div>
 
     {% if settings.dgShowBacklinks === true or settings.dgShowLocalGraph === true or settings.dgShowToc === true%}
       {%include "components/sidebar.njk"%}
@@ -91,7 +92,5 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       {% include imp %}
     {% endfor %}
     {%include "components/lucideIcons.njk"%}
-     
-    </div>
   </body>
 </html>
