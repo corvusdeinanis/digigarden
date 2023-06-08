@@ -1,7 +1,7 @@
 ---
 {"title": "testtt",
 "dg-publish": "true",
-"noteIcon": "😀"}
+"noteIcon": "😀","permalink":"/test"}
 ---
 
 lorem ipsum bla bla
