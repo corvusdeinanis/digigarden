@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sem-v-bucket/","title":"Sem V Bucket","tags":["college,legacy"],"created":"2023-07-03","updated":""}
+{"dg-publish":true,"permalink":"/sem-v-bucket/","title":"Sem V Bucket","tags":["college","legacy"],"created":"2023-07-03","updated":""}
 ---
 
 
